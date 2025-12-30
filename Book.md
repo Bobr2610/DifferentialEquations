@@ -257,7 +257,7 @@ $$
 
 Теорема: Локальная теорема существования и единственности.
 
-Если $f, f_{e}^{\prime} \in C(G)$, то $\forall (t_0, x_0) \in G$ ∃U(t₀): ∃! решение x: U(t₀) → $\mathbb{R}^n$ задачи Коши.
+Если $f, f_{x}^{\prime} \in C(G)$, то $\forall (t_0, x_0) \in G$ ∃U(t₀): ∃! решение x: U(t₀) → $\mathbb{R}^n$ задачи Коши.
 
 Лемма: Интегральное представление решения.
 
@@ -405,7 +405,7 @@ $$
 
 Теорема: Локальная теорема существования и единственности.
 
-Если $f, f'_\ell \in C(G)$, то для любой точки $(t_0, x_0) \in G$ существует интервал $U(t_0) \subset \mathbb{R}$ такой, что задача Коши имеет единственное решение $x : U(t_0) \to \mathbb{R}^n$.
+Если $f, f'_x \in C(G)$, то для любой точки $(t_0, x_0) \in G$ существует интервал $U(t_0) \subset \mathbb{R}$ такой, что задача Коши имеет единственное решение $x : U(t_0) \to \mathbb{R}^n$.
 
 Доказательство:
 
@@ -632,7 +632,7 @@ $$
 
 Теорема: Если $f \in C(G)$, а $y$ - непродолжаемое решение уравнения, то для любого компакта $C \subset G$ существует такой отрезок $K \subset D(y)$, что имеет место условие $(t, y(t), \dots, y^{(n-1)}(t)) \notin C$, где $t \notin K$.
 
-Определение: Уравнение $y^{(n)} + a_1(t)y^{(n-1)} + \dots + a_n(t)y = f(t)$, где $a_1, \dots, a_n, f : I \to \mathbb{R}$, назовём линейным неоднородным уравнением $n$-ого порядка, а в случае $f = 0$ - линейным однородным. Матричную функцию $A$ и вектор-функцию $F$, определённые по формулам $A = \begin{pmatrix} 0 &amp; 1 &amp; \dots &amp; 0 \\ 0 &amp; \dots &amp; \dots &amp; 0 \\ 0 &amp; \dots &amp; 0 &amp; 1 \\ -a_n &amp; \dots &amp; -a_2 &amp; -a_1 \end{pmatrix}, F = \begin{pmatrix} 0 \\ \dots \\ 0 \\ f \end{pmatrix}$, назовём матрицей уравнения и его векторной неоднородностью соответственно.
+Определение: Уравнение $y^{(n)} + a_1(t)y^{(n-1)} + \dots + a_n(t)y = f(t)$, где $a_1, \dots, a_n, f : I \to \mathbb{R}$, назовём линейным неоднородным уравнением $n$-ого порядка, а в случае $f = 0$ - линейным однородным. Матричную функцию $A$ и вектор-функцию $F$, определённые по формулам $A = \begin{pmatrix} 0 & 1 & \dots & 0 \\ 0 & \dots & \dots & 0 \\ 0 & \dots & 0 & 1 \\ -a_n & \dots & -a_2 & -a_1 \end{pmatrix}, F = \begin{pmatrix} 0 \\ \dots \\ 0 \\ f \end{pmatrix}$, назовём матрицей уравнения и его векторной неоднородностью соответственно.
 
 Лемма: Каноническая замена осуществляет изоморфизм множеств $S_{n,f}S_{A,F}$.
 
@@ -646,7 +646,7 @@ $$
 
 Определение: Расширение задачи Коши для уравнения $F(t,y,y') = 0$ состоит в задании начальных условий $(t_0,y_0,y_0') \in H$ таких, что $F(t_0,y_0,y_0') = 0$.
 
-Теорема: Если $F, F_y', F_y' \in C(H)$, то для любой точки $(t_0, y_0, y_0') \in H$, удовлетворяющей условию $F(t_0, y_0, y_0') = 0$, существует интервал $U(t_0) \subset I$ и единственное решение $y: U(t_0) \to \mathbb{R}$ задачи Коши с расширенными начальными условиями.
+Теорема: Если $F, F_y', F_{y'}' \in C(H)$, то для любой точки $(t_0, y_0, y_0') \in H$, удовлетворяющей условию $F(t_0, y_0, y_0') = 0$, существует интервал $U(t_0) \subset I$ и единственное решение $y: U(t_0) \to \mathbb{R}$ задачи Коши с расширенными начальными условиями.
 
 Определение: Особое решение - решение уравнения $F(t,y,y') = 0$, которое при каждом $t \in D(y)$ тройка $(t,y(t),\dot{y}(t))$ является точкой неединственности (т.е. через нее проходят как минимум два решения с разными производными).
 
@@ -670,9 +670,7 @@ $$
 
 Особые решения уравнения Клеро получаются исключением параметра $p$ из системы $y = tp + \varphi(p)$, $0 = t + \varphi'(p)$.
 
-Определение: Уравнение Клеро - уравнение вида $y = tp - \varphi(p)$, где $p = \dot{y}$.
-
-Вопрос 24: Общее решение однородной системы. Теорема об изоморфизме. Фундаментальные системы решений.
+## Вопрос 24: Общее решение однородной системы. Теорема об изоморфизме. Фундаментальные системы решений.
 
 Утверждение: Общее решение однородной системы $\dot{x} = A(t)x$, где $x \in \mathbb{R}^n$, $t \in I$, имеет линейную структуру.
 
@@ -748,9 +746,9 @@ $$
 
 ## Вопрос 27: Формула Лиувилля – Остроградского для вектор-функций. Определитель и след оператора Коши.
 
-Теорема: Для любых решений $x_1, \ldots, x_n \in S_A$ имеет место равенство $W_{x_1, \ldots, x_n}(t) = W_{x_1, \ldots, x_n}(t_0) * e^{\int_{t_0}^t \operatorname{tr} A(\tau) d\tau}$, где $t_0, t \in I$.
+Теорема: Для любых решений $x_1, \ldots, x_n \in S_A$ имеет место равенство $W_{x_1, \ldots, x_n}(t) = W_{x_1, \ldots, x_n}(t_0) \cdot e^{\int_{t_0}^t \operatorname{tr} A(\tau) d\tau}$, где $t_0, t \in I$.
 
-Доказательство: Достаточно показать, что определитель Вронского удовлетворяет дифференциальному уравнение $\dot{W} = \operatorname{tr} A(t) * W$, где $t \in I$, из которого получим требуемое.
+Доказательство: Достаточно показать, что определитель Вронского удовлетворяет дифференциальному уравнение $\dot{W} = \operatorname{tr} A(t) \cdot W$, где $t \in I$, из которого получим требуемое.
 
 Следствие: Если $\operatorname{tr} A = 0$, то определитель Вронского любых решений $x_1, \ldots, x_n \in S_A$ есть константа.
 
@@ -760,7 +758,7 @@ $$
 
 Следствие: Если $X(t, s)$ - оператор Коши системы, то $\det X(t, s) = e^{\int_{s}^t \operatorname{tr} A(\tau) d\tau}$.
 
-Доказательство: Если в $\mathbb{R}^n$ задан базис, то по лемме для любого фиксированного $s \in I$ матрица $X(\cdot, s)$ оператора $X(\cdot, s)$ есть матрица решений, причём $X(s, s) = E$, поэтому $\det X(t, s) = \det X(s, s) * e^{\int_{s}^t \operatorname{tr} A(\tau) d\tau} = e^{\int_{s}^t \operatorname{tr} A(\tau) d\tau}$ согласно теореме.
+Доказательство: Если в $\mathbb{R}^n$ задан базис, то по лемме для любого фиксированного $s \in I$ матрица $X(\cdot, s)$ оператора $X(\cdot, s)$ есть матрица решений, причём $X(s, s) = E$, поэтому $\det X(t, s) = \det X(s, s) \cdot e^{\int_{s}^t \operatorname{tr} A(\tau) d\tau} = e^{\int_{s}^t \operatorname{tr} A(\tau) d\tau}$ согласно теореме.
 
 ## Вопрос 28: Общее решение неоднородной системы. Метод вариации постоянных (теорема).
 
@@ -790,7 +788,7 @@ $$
 
 ## Вопрос 30: Определитель Вронского скалярных функций. Свойства. Восстановление линейного уравнения. Признаки линейной зависимости.
 
-Определение: Определитель Вронского скалярных функций $f_1, \ldots, f_n \in \Phi^{n-1}(I)$ - это функция $W_{f_1, \ldots, f_n}(t) = W_{\psi f_1, \ldots, \psi f_n}(t) = \left( \begin{array}{ccc} f_1(t) &amp; \ldots &amp; f_n(t) \\ \dot{f}_1(t) &amp; \ldots &amp; \dot{f}_n(t) \\ &amp; \ldots \\ f_1^{(n-1)}(t) &amp; \ldots &amp; f_n^{(n-1)}(t) \end{array} \right)$, где $t \in I$.
+Определение: Определитель Вронского скалярных функций $f_1, \ldots, f_n \in \Phi^{n-1}(I)$ - это функция $W_{f_1, \ldots, f_n}(t) = W_{\psi f_1, \ldots, \psi f_n}(t) = \left( \begin{array}{ccc} f_1(t) & \ldots & f_n(t) \\ \dot{f}_1(t) & \ldots & \dot{f}_n(t) \\ & \ldots \\ f_1^{(n-1)}(t) & \ldots & f_n^{(n-1)}(t) \end{array} \right)$, где $t \in I$.
 
 Лемма: Если функции $f_1, \ldots, f_n \in \Phi^{n-1}(I)$ линейно зависимы, то $W_{f_1, \ldots, f_n}(t) = 0$, где $t \in I$.
 
@@ -804,7 +802,7 @@ $$
 - $W_{y_1, \ldots, y_n}(t) = 0$ для всех $t \in I$,
 - $W_{y_1, \ldots, y_n}(t_0) = 0$ для некоторого $t_0 \in I$.
 
-Теорема: Для любых решений $y_1, \ldots, y_n \in S_0$ имеет место равенство $W_{y_1, \ldots, y_n}(t) = W_{y_1, \ldots, y_n}(t_0) * e^{-\int_{t_0}^t a_1(\tau)d\tau}$, где $t_0, t \in I$.
+Теорема: Для любых решений $y_1, \ldots, y_n \in S_0$ имеет место равенство $W_{y_1, \ldots, y_n}(t) = W_{y_1, \ldots, y_n}(t_0) \cdot e^{-\int_{t_0}^t a_1(\tau)d\tau}$, где $t_0, t \in I$.
 
 Теорема: Если скалярные функции $f_1, \ldots, f_n \in C^n(I)$ удовлетворяют условию $W_{f_1, \ldots, f_n}(t) \neq 0$, где $t \in I$, то они образуют фундаментальную систему решений линейного однородного уравнения, определяемого как определитель Вронского, расширенный на $y$ и его производные.
 
@@ -913,11 +911,11 @@ y_\tau(t), \tau \leq t < \beta
 
 $$
 J_{\lambda, m} = \begin{pmatrix}
-\lambda &amp; 1 &amp; 0 &amp; \dots &amp; 0 \\
-0 &amp; \lambda &amp; 1 &amp; \dots &amp; 0 \\
-\vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
-0 &amp; 0 &amp; 0 &amp; \dots &amp; 1 \\
-0 &amp; 0 &amp; 0 &amp; \dots &amp; \lambda
+\lambda & 1 & 0 & \dots & 0 \\
+0 & \lambda & 1 & \dots & 0 \\
+\vdots & \vdots & \vdots & \ddots & \vdots \\
+0 & 0 & 0 & \dots & 1 \\
+0 & 0 & 0 & \dots & \lambda
 \end{pmatrix}
 $$
 
@@ -927,10 +925,10 @@ $$
 
 $$
 e^{J_{\lambda, m}} = e^{\lambda} \begin{pmatrix}
-1 &amp; \frac{t}{1!} &amp; \frac{t^2}{2!} &amp; \dots &amp; \frac{t^{m-1}}{(m-1)!} \\
-0 &amp; 1 &amp; \frac{t}{1!} &amp; \dots &amp; \frac{t^{m-2}}{(m-2)!} \\
-\vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
-0 &amp; 0 &amp; 0 &amp; \dots &amp; 1
+1 & \frac{t}{1!} & \frac{t^2}{2!} & \dots & \frac{t^{m-1}}{(m-1)!} \\
+0 & 1 & \frac{t}{1!} & \dots & \frac{t^{m-2}}{(m-2)!} \\
+\vdots & \vdots & \vdots & \ddots & \vdots \\
+0 & 0 & 0 & \dots & 1
 \end{pmatrix}
 $$
 
@@ -1035,7 +1033,7 @@ $$
 Здесь $A$ — матрица Якоби (матрица первых производных, матрица линеаризации):
 
 $$
-A = \mathbf {f} ^ {\prime} (\mathbf {x} _ {0}) = \left( \begin{array}{c c c} \frac {\partial f _ {1}}{\partial x _ {1}} &amp; \dots &amp; \frac {\partial f _ {1}}{\partial x _ {n}} \\ \vdots &amp; \ddots &amp; \vdots \\ \frac {\partial f _ {n}}{\partial x _ {1}} &amp; \dots &amp; \frac {\partial f _ {n}}{\partial x _ {n}} \end{array} \right) _ {\mathbf {x} = \mathbf {x} _ {0}}.
+A = \mathbf {f} ^ {\prime} (\mathbf {x} _ {0}) = \left( \begin{array}{c c c} \frac {\partial f _ {1}}{\partial x _ {1}} & \dots & \frac {\partial f _ {1}}{\partial x _ {n}} \\ \vdots & \ddots & \vdots \\ \frac {\partial f _ {n}}{\partial x _ {1}} & \dots & \frac {\partial f _ {n}}{\partial x _ {n}} \end{array} \right) _ {\mathbf {x} = \mathbf {x} _ {0}}.
 $$
 
 3. Исследовать линеаризованную систему:
@@ -1058,7 +1056,7 @@ $$
 Рассмотрим подробно случай $n = 2$, который нагляден и имеет полную классификацию. Система:
 
 $$
-\left\{ \begin{array}{l} \dot{x} = ax + by \\ \dot{y} = cx + dy \end{array} \right. \quad \text{или} \quad \dot{\mathbf{x}} = A\mathbf{x}, \quad A = \begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix}.
+\left\{ \begin{array}{l} \dot{x} = ax + by \\ \dot{y} = cx + dy \end{array} \right. \quad \text{или} \quad \dot{\mathbf{x}} = A\mathbf{x}, \quad A = \begin{pmatrix} a & b \\ c & d \end{pmatrix}.
 $$
 
 Положение равновесия в начале координат $(0, 0)$ (при $\det A \ne 0$ — это изолированная особая точка).
@@ -1094,7 +1092,7 @@ $$
 1. Линеаризовать. Вычислить матрицу Якоби:
 
 $$
-A = \begin{pmatrix} P_x'(x_0, y_0) &amp; P_y'(x_0, y_0) \\ Q_x'(x_0, y_0) &amp; Q_y'(x_0, y_0) \end{pmatrix}.
+A = \begin{pmatrix} P_x'(x_0, y_0) & P_y'(x_0, y_0) \\ Q_x'(x_0, y_0) & Q_y'(x_0, y_0) \end{pmatrix}.
 $$
 
 2. Найти собственные числа $\lambda_1, \lambda_2$ матрицы $A$.
@@ -1115,7 +1113,7 @@ $$
 
 2. $V(\mathbf{x}) > 0$ для всех $\mathbf{x} \in U \setminus \{\mathbf{0}\}$ (положительно определённая).
 
-3. Её производная в силу системы $V(\mathbf{x}) = \sum_{i=1}^{n} \frac{\partial V}{\partial x_i} f_i(\mathbf{x}) \le 0$ для всех $\mathbf{x} \in U$ (отрицательно полуопределённая).
+3. Её производная в силу системы $\dot{V}(\mathbf{x}) = \sum_{i=1}^{n} \frac{\partial V}{\partial x_i} f_i(\mathbf{x}) \le 0$ для всех $\mathbf{x} \in U$ (отрицательно полуопределённая).
 
 Теоремы Ляпунова:
 
@@ -1142,13 +1140,13 @@ $$
 
 2. Исследуем точку $(0, 0)$:
 
-- Матрица Якоби: $A = \begin{pmatrix} 1 - y &amp; -x \\ y &amp; -1 + x \end{pmatrix}$. В точке $(0, 0)$: $A = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; -1 \end{pmatrix}$.
+- Матрица Якоби: $A = \begin{pmatrix} 1 - y & -x \\ y & -1 + x \end{pmatrix}$. В точке $(0, 0)$: $A = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}$.
 - Собственные числа: $\lambda_1 = 1 > 0, \lambda_2 = -1 < 0$ (разных знаков).
 - Вывод: $(0, 0)$ — седло (неустойчиво). Устойчивое многообразие — ось $y$ (хищники вымирают без жертв). Неустойчивое многообразие — ось $x$ (жертвы растут при отсутствии хищников).
 
 3. Исследуем точку $(1, 1)$:
 
-- В точке $(1, 1)$: $A = \begin{pmatrix} 0 &amp; -1 \\ 1 &amp; 0 \end{pmatrix}$.
+- В точке $(1, 1)$: $A = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$.
 - Собственные числа: $\lambda^2 + 1 = 0 \Rightarrow \lambda_{1,2} = \pm i$.
 - Вывод по первому приближению: Собственные числа чисто мнимые — это критический случай. Первый метод Ляпунова не даёт ответа. Необходимо дополнительное исследование.
 
@@ -1279,10 +1277,10 @@ $$
 
 $$
 A = \mathbf{f}'(\mathbf{x}_0) = \begin{pmatrix}
-\frac{\partial f_1}{\partial x_1} &amp; \frac{\partial f_1}{\partial x_2} &amp; \dots &amp; \frac{\partial f_1}{\partial x_n} \\
-\frac{\partial f_2}{\partial x_1} &amp; \frac{\partial f_2}{\partial x_2} &amp; \dots &amp; \frac{\partial f_2}{\partial x_n} \\
-\vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
-\frac{\partial f_n}{\partial x_1} &amp; \frac{\partial f_n}{\partial x_2} &amp; \dots &amp; \frac{\partial f_n}{\partial x_n}
+\frac{\partial f_1}{\partial x_1} & \frac{\partial f_1}{\partial x_2} & \dots & \frac{\partial f_1}{\partial x_n} \\
+\frac{\partial f_2}{\partial x_1} & \frac{\partial f_2}{\partial x_2} & \dots & \frac{\partial f_2}{\partial x_n} \\
+\vdots & \vdots & \ddots & \vdots \\
+\frac{\partial f_n}{\partial x_1} & \frac{\partial f_n}{\partial x_2} & \dots & \frac{\partial f_n}{\partial x_n}
 \end{pmatrix}_{x = x_0}.
 $$
 
@@ -1369,7 +1367,7 @@ $$
 Шаг 1: Матрица Якоби
 
 $$
-A = \left( \begin{array}{cc} P_x(x_0, y_0) &amp; P_y(x_0, y_0) \\ Q_x(x_0, y_0) &amp; Q_y(x_0, y_0) \end{array} \right)
+A = \left( \begin{array}{cc} P_x(x_0, y_0) & P_y(x_0, y_0) \\ Q_x(x_0, y_0) & Q_y(x_0, y_0) \end{array} \right)
 $$
 
 Шаг 2: Вычисление инвариантов
@@ -1452,7 +1450,7 @@ $$
 2. Матрица Якоби:
 
 $$
-A = \left( \begin{array}{cc} 0 &amp; 1 \\ -k &amp; -\beta \end{array} \right)
+A = \left( \begin{array}{cc} 0 & 1 \\ -k & -\beta \end{array} \right)
 $$
 
 3. Характеристическое уравнение: $\lambda^2 + \beta \lambda + k = 0$
@@ -1472,13 +1470,13 @@ $$
 
 1. Положения равновесия: $(k\pi, 0), k \in \mathbb{Z}$
 2. Исследуем точку $(0, 0)$:
-- Матрица Якоби: $A = \begin{pmatrix} 0 &amp; 1 \\ -\cos 0 &amp; -\alpha \end{pmatrix} = \begin{pmatrix} 0 &amp; 1 \\ -1 &amp; -\alpha \end{pmatrix}$
+- Матрица Якоби: $A = \begin{pmatrix} 0 & 1 \\ -\cos 0 & -\alpha \end{pmatrix} = \begin{pmatrix} 0 & 1 \\ -1 & -\alpha \end{pmatrix}$
 - Характеристическое уравнение: $\lambda^2 + \alpha\lambda + 1 = 0$
 - При $\alpha > 0$: $p = \alpha > 0$, $q = 1 > 0$ → асимптотически устойчиво
 - При $\alpha = 0$: $p = 0$ → центр (критический случай, но для консервативной системы действительно центр)
 
 3. Исследуем точку $(\pi, 0)$:
-- Матрица Якоби: $A = \begin{pmatrix} 0 &amp; 1 \\ -\cos \pi &amp; -\alpha \end{pmatrix} = \begin{pmatrix} 0 &amp; 1 \\ 1 &amp; -\alpha \end{pmatrix}$
+- Матрица Якоби: $A = \begin{pmatrix} 0 & 1 \\ -\cos \pi & -\alpha \end{pmatrix} = \begin{pmatrix} 0 & 1 \\ 1 & -\alpha \end{pmatrix}$
 - Характеристическое уравнение: $\lambda^2 + \alpha\lambda - 1 = 0$
 - $q = -1 < 0$ всегда → СЕДЛО (неустойчиво) при любом $\alpha$
 
@@ -2097,8 +2095,8 @@ $$
 
 Утверждение: Методы отыскания интегрирующего множителя:
 
-1. Если $\frac{M_y' - M_x'}{N} = \varphi(x)$, то $\mu = e^{\int \varphi(x)dx}$
-2. Если $\frac{N_y' - M_y'}{M} = \psi(y)$, то $\mu = e^{\int \psi(y)dy}$
+1. Если $\frac{M_y' - N_x'}{N} = \varphi(x)$, то $\mu = e^{\int \varphi(x)dx}$
+2. Если $\frac{N_x' - M_y'}{M} = \psi(y)$, то $\mu = e^{\int \psi(y)dy}$
 3. Метод подстановки для специальных случаев
 
 ### Уравнения, не разрешённые относительно производной
@@ -2127,11 +2125,11 @@ $$
 Утверждение: Уравнения с постоянными коэффициентами решается следующим образом:
 
 1. Составляем характеристическое уравнение $a_0\lambda^n + a_1\lambda^{n-1} + \cdots + a_{n-1}\lambda + a_n = 0$.
-2. Находим все корни характеристическое уравнения и их кратности.
+2. Находим все корни характеристического уравнения и их кратности.
 3. Записываем общее решение в виде суммы слагаемых вида:
 - $C_i e^{\lambda_i x}$ для простого вещественного корня $\lambda_i$.
 - $(C_{m+1} + C_{m+2}x + C_{m+3}x^2 + \cdots + C_{m+k}x^{k-1})e^{\lambda x}$ для каждого вещественного кратного корня $\lambda$ кратности $k$.
-- $C_{m+1}e^{\alpha x} \cos \beta x + C_{m+2}e^{\alpha y} \sin \beta x$ для каждой пары комплексных сопряжённых простых корней $\lambda = \alpha \pm \beta i$.
+- $C_{m+1}e^{\alpha x} \cos \beta x + C_{m+2}e^{\alpha x} \sin \beta x$ для каждой пары комплексных сопряжённых простых корней $\lambda = \alpha \pm \beta i$.
 - $(C_{m+1} + C_{m+2}x + C_{m+3}x^2 + \cdots + C_{m+k}x^{k-1})$
 
 Утверждение: Для линейных неоднородных уравнений с постоянными коэффициентами и с правой частью, состоящей из сумм и произведений функций $b_0 + b_1x + \cdots + b_mx^m$, $e^{\alpha x}$, $\cos \beta x$, $\sin \beta x$, частное решение можно искать методом неопределённых коэффициентов.
@@ -2187,13 +2185,13 @@ $$
 
 **Теорема 1 (Структура общего решения ЛНДУ).**
 
-Общее решение $y_{\mathrm{он}}(t)$ уравнения (1) имеет вид:
+Общее решение $y_{\mathrm{ор}}(t)$ уравнения (1) имеет вид:
 
 $$
-y_{\mathrm{он}}(t) = y_{\mathrm{он}}(t) + y_{\mathrm{чн}}(t),
+y_{\mathrm{ор}}(t) = y_{\mathrm{оо}}(t) + y_{\mathrm{чн}}(t),
 $$
 
-где $y_{\mathrm{он}}(t)$ — общее решение соответствующего однородного уравнения $L[y] = 0$, а $y_{\mathrm{чн}}(t)$ — любое частное решение неоднородного уравнения.
+где $y_{\mathrm{оо}}(t)$ — общее решение соответствующего однородного уравнения $L[y] = 0$, а $y_{\mathrm{чн}}(t)$ — любое частное решение неоднородного уравнения.
 
 **Теорема 2 (Структура общего решения ЛОДУ).**
 
@@ -2209,10 +2207,10 @@ $$
 
 $$
 W(t) = W[y_1, \ldots, y_n](t) = \det \begin{pmatrix}
-y_1 &amp; y_2 &amp; \ldots &amp; y_n \\
-y_1' &amp; y_2' &amp; \ldots &amp; y_n' \\
-\vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
-y_1^{(n-1)} &amp; y_2^{(n-1)} &amp; \ldots &amp; y_n^{(n-1)}
+y_1 & y_2 & \ldots & y_n \\
+y_1' & y_2' & \ldots & y_n' \\
+\vdots & \vdots & \ddots & \vdots \\
+y_1^{(n-1)} & y_2^{(n-1)} & \ldots & y_n^{(n-1)}
 \end{pmatrix}.
 $$
 
@@ -2330,9 +2328,9 @@ $$
 
 где $(A - \lambda I)\mathbf{h}_0 = 0$ (собств. вектор), $(A - \lambda I)\mathbf{h}_1 = \mathbf{h}_0$, и т.д.
 
-Пример: $\dot{\mathbf{x}} = \left( \begin{array}{cc}2 &amp; 1\\ -1 &amp; 4 \end{array} \right)\mathbf{x}$. Хар. уравнение: $\operatorname *{det}(A - \lambda I) = (2 - \lambda)(4 - \lambda) + 1 = \lambda^2 -6\lambda +9 = (\lambda -3)^2 = 0$. Корень $\lambda = 3$ кратности 2.
+Пример: $\dot{\mathbf{x}} = \left( \begin{array}{cc}2 & 1\\ -1 & 4 \end{array} \right)\mathbf{x}$. Хар. уравнение: $\det(A - \lambda I) = (2 - \lambda)(4 - \lambda) + 1 = \lambda^2 -6\lambda +9 = (\lambda -3)^2 = 0$. Корень $\lambda = 3$ кратности 2.
 
-Находим собственный вектор: $(A - 3I)\mathbf{v} = 0\Rightarrow \left( \begin{array}{cc} - 1 &amp; 1\\ -1 &amp; 1 \end{array} \right)\mathbf{v} = 0\Rightarrow \mathbf{v} = (1,1)^T$. Только один вектор. Ищем присоединённый: $(A - 3I)\mathbf{h}_1 = \mathbf{v}$. Решаем $\left( \begin{array}{cc} - 1 &amp; 1\\ -1 &amp; 1 \end{array} \right)\mathbf{h}_1 = \left( \begin{array}{c}1\\ 1 \end{array} \right)$. Одно из решений: $\mathbf{h}_1 = (0,1)^T$. Тогда ФСР: $\mathbf{x}_1(t) = e^{3t}\left( \begin{array}{c}1\\ 1 \end{array} \right)$, $\mathbf{x}_2(t) = e^{3t}\left(t\left( \begin{array}{c}1\\ 1 \end{array} \right) + \left( \begin{array}{c}0\\ 1 \end{array} \right)\right) = e^{3t}\left( \begin{array}{c}t\\ t + 1 \end{array} \right)$.
+Находим собственный вектор: $(A - 3I)\mathbf{v} = 0\Rightarrow \left( \begin{array}{cc} - 1 & 1\\ -1 & 1 \end{array} \right)\mathbf{v} = 0\Rightarrow \mathbf{v} = (1,1)^T$. Только один вектор. Ищем присоединённый: $(A - 3I)\mathbf{h}_1 = \mathbf{v}$. Решаем $\left( \begin{array}{cc} - 1 & 1\\ -1 & 1 \end{array} \right)\mathbf{h}_1 = \left( \begin{array}{c}1\\ 1 \end{array} \right)$. Одно из решений: $\mathbf{h}_1 = (0,1)^T$. Тогда ФСР: $\mathbf{x}_1(t) = e^{3t}\left( \begin{array}{c}1\\ 1 \end{array} \right)$, $\mathbf{x}_2(t) = e^{3t}\left(t\left( \begin{array}{c}1\\ 1 \end{array} \right) + \left( \begin{array}{c}0\\ 1 \end{array} \right)\right) = e^{3t}\left( \begin{array}{c}t\\ t + 1 \end{array} \right)$.
 
 ### Б. Неоднородная система: $\dot{\mathbf{x}} = A\mathbf{x} + \mathbf{f}(t)$
 
@@ -2398,7 +2396,7 @@ $$
 ###### Задание для комплексного закрепления:
 
 1. **Теория:** Докажите, что если функции $y_1(t)$ и $y_2(t)$ имеют на интервале $(a, b)$ отличный от нуля вронскиан, то они линейно независимы. Верно ли обратное для произвольных функций? Приведите контрпример.
-2. **Практика (уравнение):** Решите задачу Коши: $y'' - 4y' + 4y = \frac{e^{x'}}{2^{k+1}}$, $y(0) = 1, y'(0) = 2$.
+2. **Практика (уравнение):** Решите задачу Коши: $y'' - 4y' + 4y = \frac{e^{2x}}{x}$, $y(0) = 1, y'(0) = 2$.
 
 **Указание:** Сначала найдите общее решение однородного уравнения, затем примените метод вариации постоянных для нахождения частного решения. Интегралы можно оставить в виде первообразных.
 3. **Практика (система):** Найдите общее решение системы:
@@ -2429,10 +2427,10 @@ $$
 
 ###### Теорема 1 (Структура общего решения).
 
-Пусть $\mathbf{x}_{\infty}(t)$ — общее решение однородной системы ($\mathbf{f} \equiv 0$), а $\mathbf{x}_{\infty}(t)$ — некоторое частное решение неоднородной системы (1). Тогда общее решение неоднородной системы имеет вид:
+Пусть $\mathbf{x}_{\mathrm{оо}}(t)$ — общее решение однородной системы ($\mathbf{f} \equiv 0$), а $\mathbf{x}_{\mathrm{чн}}(t)$ — некоторое частное решение неоднородной системы (1). Тогда общее решение неоднородной системы имеет вид:
 
 $$
-\mathbf {x} _ {\infty} (t) = \mathbf {x} _ {\infty} (t) + \mathbf {x} _ {\infty} (t).
+\mathbf{x}_{\mathrm{ор}}(t) = \mathbf{x}_{\mathrm{оо}}(t) + \mathbf{x}_{\mathrm{чн}}(t).
 $$
 
 ###### Теорема 2 (Пространство решений однородной системы).
@@ -2450,7 +2448,7 @@ $$
 Матрица $\Phi (t)$, столбцами которой являются векторы ФСР, называется фундаментальной матрицей системы.
 
 $$
-\Phi (t) = \left( \begin{array}{c c c c} | &amp; | &amp; &amp; | \\ \varphi_ {1} (t) &amp; \varphi_ {2} (t) &amp; \ldots &amp; \varphi_ {n} (t) \\ | &amp; | &amp; &amp; | \end{array} \right).
+\Phi (t) = \left( \begin{array}{c c c c} | & | & & | \\ \varphi_ {1} (t) & \varphi_ {2} (t) & \ldots & \varphi_ {n} (t) \\ | & | & & | \end{array} \right).
 $$
 
 При этом $\Phi (t)$ удовлетворяет матричному уравнению:
@@ -2459,9 +2457,9 @@ $$
 \frac {d \Phi}{d t} = A (t) \Phi (t),
 $$
 
-а общее решение однородной системы в матричной форме: $\mathbf{x}_{\infty}(t) = \Phi (t)\mathbf{C}$, где $\mathbf{C} = (C_1, \ldots, C_n)^T$.
+а общее решение однородной системы в матричной форме: $\mathbf{x}_{\mathrm{оо}}(t) = \Phi(t)\mathbf{C}$, где $\mathbf{C} = (C_1, \ldots, C_n)^T$.
 
-###### Определитель Бронского (Бронскиан) системы:
+###### Определитель Вронского (Вронскиан) системы:
 
 $$
 W (t) = \det \Phi (t).
@@ -2469,7 +2467,7 @@ $$
 
 ###### Теорема 3 (Формула Лиувилля-Остроградского).
 
-Бронскиан решений однородной системы удовлетворяет уравнению:
+Вронскиан решений однородной системы удовлетворяет уравнению:
 
 $$
 \frac {d W}{d t} = \operatorname{tr} (A (t)) \cdot W (t), \quad \text{где } \operatorname{tr} A = \sum_ {i = 1} ^ {n} a _ {i i} (t).
@@ -2546,23 +2544,23 @@ $$
 
 Пример 1 (Разные типы собственных чисел):
 
-Решить систему: $\dot{\mathbf{x}} = \begin{pmatrix} 1 &amp; -2 \\ 1 &amp; 4 \end{pmatrix} \mathbf{x}$.
+Решить систему: $\dot{\mathbf{x}} = \begin{pmatrix} 1 & -2 \\ 1 & 4 \end{pmatrix} \mathbf{x}$.
 
-1. Характеристическое уравнение: $\det(A - \lambda I) = \begin{vmatrix} 1 - \lambda &amp; -2 \\ 1 &amp; 4 - \lambda \end{vmatrix} = \lambda^2 - 5\lambda + 6 = 0$. Корни: $\lambda_1 = 2, \lambda_2 = 3$ (действительные, простые).
+1. Характеристическое уравнение: $\det(A - \lambda I) = \begin{vmatrix} 1 - \lambda & -2 \\ 1 & 4 - \lambda \end{vmatrix} = \lambda^2 - 5\lambda + 6 = 0$. Корни: $\lambda_1 = 2, \lambda_2 = 3$ (действительные, простые).
 
-2. Для $\lambda_1 = 2$: $(A - 2I)\mathbf{v} = 0 \Rightarrow \begin{pmatrix} -1 &amp; -2 \\ 1 &amp; 2 \end{pmatrix} \mathbf{v} = 0 \Rightarrow \mathbf{v}_1 = (2, -1)^T$. Решение: $\mathbf{x}_1(t) = e^{2t} \begin{pmatrix} 2 \\ -1 \end{pmatrix}$.
+2. Для $\lambda_1 = 2$: $(A - 2I)\mathbf{v} = 0 \Rightarrow \begin{pmatrix} -1 & -2 \\ 1 & 2 \end{pmatrix} \mathbf{v} = 0 \Rightarrow \mathbf{v}_1 = (2, -1)^T$. Решение: $\mathbf{x}_1(t) = e^{2t} \begin{pmatrix} 2 \\ -1 \end{pmatrix}$.
 
-3. Для $\lambda_2 = 3$: $(A - 3I)\mathbf{v} = 0 \Rightarrow \begin{pmatrix} -2 &amp; -2 \\ 1 &amp; 1 \end{pmatrix} \mathbf{v} = 0 \Rightarrow \mathbf{v}_2 = (1, -1)^T$. Решение: $\mathbf{x}_2(t) = e^{3t} \begin{pmatrix} 1 \\ -1 \end{pmatrix}$.
+3. Для $\lambda_2 = 3$: $(A - 3I)\mathbf{v} = 0 \Rightarrow \begin{pmatrix} -2 & -2 \\ 1 & 1 \end{pmatrix} \mathbf{v} = 0 \Rightarrow \mathbf{v}_2 = (1, -1)^T$. Решение: $\mathbf{x}_2(t) = e^{3t} \begin{pmatrix} 1 \\ -1 \end{pmatrix}$.
 
 4. Общее решение: $\mathbf{x}(t) = C_1 e^{2t} \begin{pmatrix} 2 \\ -1 \end{pmatrix} + C_2 e^{3t} \begin{pmatrix} 1 \\ -1 \end{pmatrix}$.
 
 ### Пример 2 (Кратный корень с недостатком собственных векторов):
 
-Решить систему: $\dot{\mathbf{x}} = \begin{pmatrix} 3 &amp; -1 \\ 1 &amp; 1 \end{pmatrix} \mathbf{x}$.
+Решить систему: $\dot{\mathbf{x}} = \begin{pmatrix} 3 & -1 \\ 1 & 1 \end{pmatrix} \mathbf{x}$.
 
 1. Хар. уравнение: $\det(A - \lambda I) = \lambda^2 - 4\lambda + 4 = (\lambda - 2)^2 = 0$. Корень $\lambda = 2$ кратности $k = 2$.
-2. Находим собственные векторы: $(A - 2I)\mathbf{v} = 0 \Rightarrow \begin{pmatrix} 1 &amp; -1 \\ 1 &amp; -1 \end{pmatrix} \mathbf{v} = 0$. Ранг матрицы 1, пространство собственных векторов одномерно. Базисный вектор: $\mathbf{h}_0 = (1,1)^T$. $g = 1 < k = 2$, нужен присоединённый вектор.
-3. Ищем $\mathbf{h}_1$ из системы: $(A - 2I)\mathbf{h}_1 = \mathbf{h}_0$, т.е. $\begin{pmatrix} 1 &amp; -1 \\ 1 &amp; -1 \end{pmatrix} \mathbf{h}_1 = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$. Одно из решений: $\mathbf{h}_1 = (1,0)^T$ (можно взять $(0, -1)^T$ и т.д.).
+2. Находим собственные векторы: $(A - 2I)\mathbf{v} = 0 \Rightarrow \begin{pmatrix} 1 & -1 \\ 1 & -1 \end{pmatrix} \mathbf{v} = 0$. Ранг матрицы 1, пространство собственных векторов одномерно. Базисный вектор: $\mathbf{h}_0 = (1,1)^T$. $g = 1 < k = 2$, нужен присоединённый вектор.
+3. Ищем $\mathbf{h}_1$ из системы: $(A - 2I)\mathbf{h}_1 = \mathbf{h}_0$, т.е. $\begin{pmatrix} 1 & -1 \\ 1 & -1 \end{pmatrix} \mathbf{h}_1 = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$. Одно из решений: $\mathbf{h}_1 = (1,0)^T$ (можно взять $(0, -1)^T$ и т.д.).
 4. Строим два линейно независимых решения:
 - $\mathbf{x}_1(t) = e^{2t} \mathbf{h}_0 = e^{2t} \begin{pmatrix} 1 \\ 1 \end{pmatrix}$.
 - $\mathbf{x}_2(t) = e^{2t} (\mathbf{h}_0 t + \mathbf{h}_1) = e^{2t} \begin{pmatrix} t \begin{pmatrix} 1 \\ 1 \end{pmatrix} + \begin{pmatrix} 1 \\ 0 \end{pmatrix} \end{pmatrix} = e^{2t} \begin{pmatrix} t + 1 \\ t \end{pmatrix}$.
@@ -2640,13 +2638,13 @@ $$
 
 ### Пример 3 (Метод неопределённых коэффициентов):
 
-Решить систему: $\dot{\mathbf{x}} = \begin{pmatrix} 1 &amp; 1 \\ 4 &amp; 1 \end{pmatrix} \mathbf{x} + \begin{pmatrix} e^t \\ 0 \end{pmatrix}$.
+Решить систему: $\dot{\mathbf{x}} = \begin{pmatrix} 1 & 1 \\ 4 & 1 \end{pmatrix} \mathbf{x} + \begin{pmatrix} e^t \\ 0 \end{pmatrix}$.
 
 1. Однородная часть. Хар. уравнение: $\lambda^2 - 2\lambda - 3 = 0$, корни $\lambda_1 = -1, \lambda_2 = 3$.
 
 - $\lambda_1 = -1$: собств. вектор $\mathbf{v}_1 = (1, -2)^T$.
 - $\lambda_2 = 3$: собств. вектор $\mathbf{v}_2 = (1, 2)^T$.
-- ФМ: $\Phi(t) = \begin{pmatrix} e^{-t} &amp; e^{3t} \\ -2e^{-t} &amp; 2e^{3t} \end{pmatrix}$, общее однородное: $\mathbf{x}_{\infty} = C_1 e^{-t} \begin{pmatrix} 1 \\ -2 \end{pmatrix} + C_2 e^{3t} \begin{pmatrix} 1 \\ 2 \end{pmatrix}$.
+- ФМ: $\Phi(t) = \begin{pmatrix} e^{-t} & e^{3t} \\ -2e^{-t} & 2e^{3t} \end{pmatrix}$, общее однородное: $\mathbf{x}_{\mathrm{оо}} = C_1 e^{-t} \begin{pmatrix} 1 \\ -2 \end{pmatrix} + C_2 e^{3t} \begin{pmatrix} 1 \\ 2 \end{pmatrix}$.
 
 2. Правая часть $\mathbf{f}(t) = \begin{pmatrix} e^t \\ 0 \end{pmatrix} = e^t \begin{pmatrix} 1 \\ 0 \end{pmatrix}$. Здесь $\alpha = 1, \beta = 0$, $s = 1$. Степени многочленов: $m = 0, l = 0$, $k = 0$.
 
@@ -2659,7 +2657,7 @@ $$
 3. Подставляем в систему: $\frac{d}{dt} (e^t \mathbf{a}) = e^t \mathbf{a} = A (e^t \mathbf{a}) + \begin{pmatrix} e^t \\ 0 \end{pmatrix}$. Сокращаем $e^t \neq 0$:
 
 $$
-\mathbf{a} = A \mathbf{a} + \begin{pmatrix} 1 \\ 0 \end{pmatrix} \quad \Rightarrow \quad \begin{pmatrix} a_1 \\ a_2 \end{pmatrix} = \begin{pmatrix} 1 &amp; 1 \\ 4 &amp; 1 \end{pmatrix} \begin{pmatrix} a_1 \\ a_2 \end{pmatrix} + \begin{pmatrix} 1 \\ 0 \end{pmatrix}.
+\mathbf{a} = A \mathbf{a} + \begin{pmatrix} 1 \\ 0 \end{pmatrix} \quad \Rightarrow \quad \begin{pmatrix} a_1 \\ a_2 \end{pmatrix} = \begin{pmatrix} 1 & 1 \\ 4 & 1 \end{pmatrix} \begin{pmatrix} a_1 \\ a_2 \end{pmatrix} + \begin{pmatrix} 1 \\ 0 \end{pmatrix}.
 $$
 
 Получаем систему:
@@ -2713,7 +2711,7 @@ $$
 Решить задачу Коши:
 
 $$
-\dot{\mathbf{x}} = \left( \begin{array}{cc} 0 &amp; 1 \\ -2 &amp; -2 \end{array} \right) \mathbf{x} + \left( \begin{array}{c} 0 \\ 2 \cos t \end{array} \right), \quad \mathbf{x}(0) = \left( \begin{array}{c} 1 \\ 0 \end{array} \right).
+\dot{\mathbf{x}} = \left( \begin{array}{cc} 0 & 1 \\ -2 & -2 \end{array} \right) \mathbf{x} + \left( \begin{array}{c} 0 \\ 2 \cos t \end{array} \right), \quad \mathbf{x}(0) = \left( \begin{array}{c} 1 \\ 0 \end{array} \right).
 $$
 
 Решение по шагам:
@@ -2723,7 +2721,7 @@ $$
 - Для $\lambda = -1 + i$ находим собственный вектор: $(A - (-1 + i)I)\mathbf{v} = 0$.
 
 $$
-\left( \begin{array}{cc} 1 - i &amp; 1 \\ -2 &amp; -1 - i \end{array} \right) \left( \begin{array}{c} v_1 \\ v_2 \end{array} \right) = 0 \Rightarrow (1 - i)v_1 + v_2 = 0.
+\left( \begin{array}{cc} 1 - i & 1 \\ -2 & -1 - i \end{array} \right) \left( \begin{array}{c} v_1 \\ v_2 \end{array} \right) = 0 \Rightarrow (1 - i)v_1 + v_2 = 0.
 $$
 
 $$
@@ -2742,7 +2740,7 @@ $$
 - Фундаментальная матрица:
 
 $$
-\Phi(t) = e^{-t} \left( \begin{array}{cc} \cos t &amp; \sin t \\ -\cos t - \sin t &amp; -\sin t + \cos t \end{array} \right).
+\Phi(t) = e^{-t} \left( \begin{array}{cc} \cos t & \sin t \\ -\cos t - \sin t & -\sin t + \cos t \end{array} \right).
 $$
 
 Проверим вронскиан: $\det \Phi(t) = e^{-2t}[(\cos t)(-\sin t + \cos t) - (\sin t)(-\cos t - \sin t)] = e^{-2t}(\cos^2 t + \sin^2 t) = e^{-2t} \neq 0$.
@@ -2769,8 +2767,8 @@ $$
 - Приравниваем коэффициенты при $\cos t$ и $\sin t$ отдельно:
 $$
 \left\{ \begin{array}{l l}
-\mathbf{b} = A \mathbf{a} + \binom{0}{2}, &amp; (\text{для } \cos t) \\
-- \mathbf{a} = A \mathbf{b}. &amp; (\text{для } \sin t)
+\mathbf{b} = A \mathbf{a} + \binom{0}{2}, & (\text{для } \cos t) \\
+- \mathbf{a} = A \mathbf{b}. & (\text{для } \sin t)
 \end{array} \right.
 $$
 
@@ -2812,9 +2810,9 @@ $$
 \mathbf{x}(0) = \Phi(0) \mathbf{C} + \frac{1}{5} \begin{pmatrix} 2 \\ 4 \end{pmatrix} = \begin{pmatrix} 1 \\ 0 \end{pmatrix}.
 $$
 
-$\Phi(0) = e^0 \begin{pmatrix} 1 &amp; 0 \\ -1 &amp; 1 \end{pmatrix} = \begin{pmatrix} 1 &amp; 0 \\ -1 &amp; 1 \end{pmatrix}$. Тогда:
+$\Phi(0) = e^0 \begin{pmatrix} 1 & 0 \\ -1 & 1 \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ -1 & 1 \end{pmatrix}$. Тогда:
 $$
-\begin{pmatrix} 1 &amp; 0 \\ -1 &amp; 1 \end{pmatrix} \mathbf{C} = \begin{pmatrix} 1 \\ 0 \end{pmatrix} - \frac{1}{5} \begin{pmatrix} 2 \\ 4 \end{pmatrix} = \begin{pmatrix} 3/5 \\ -4/5 \end{pmatrix}.
+\begin{pmatrix} 1 & 0 \\ -1 & 1 \end{pmatrix} \mathbf{C} = \begin{pmatrix} 1 \\ 0 \end{pmatrix} - \frac{1}{5} \begin{pmatrix} 2 \\ 4 \end{pmatrix} = \begin{pmatrix} 3/5 \\ -4/5 \end{pmatrix}.
 $$
 
 Решаем: $C_1 = 3/5$, $-C_1 + C_2 = -4/5 \Rightarrow -3/5 + C_2 = -4/5 \Rightarrow C_2 = -1/5$.
@@ -2825,7 +2823,7 @@ $$
 
 Подставляем $\mathbf{C}$ в общее решение:
 $$
-\mathbf{x}(t) = e^{-t} \begin{pmatrix} \cos t &amp; \sin t \\ - \cos t - \sin t &amp; - \sin t + \cos t \end{pmatrix} \begin{pmatrix} 3/5 \\ -1/5 \end{pmatrix} + \frac{1}{5} \begin{pmatrix} 2 \cos t + 4 \sin t \\ 4 \cos t - 2 \sin t \end{pmatrix}.
+\mathbf{x}(t) = e^{-t} \begin{pmatrix} \cos t & \sin t \\ - \cos t - \sin t & - \sin t + \cos t \end{pmatrix} \begin{pmatrix} 3/5 \\ -1/5 \end{pmatrix} + \frac{1}{5} \begin{pmatrix} 2 \cos t + 4 \sin t \\ 4 \cos t - 2 \sin t \end{pmatrix}.
 $$
 
 После умножения и сложения получаем явный ответ (здесь его можно оставить в компактной форме или упростить).
@@ -2855,7 +2853,7 @@ $$
 - Простые комплексные $\alpha \pm i\beta$: $e^{\alpha t} \cos \beta t, e^{\alpha t} \sin \beta t$
 - Кратные комплексные $\alpha \pm i\beta$ кратности $k$: $e^{\alpha t} \cos \beta t, e^{\alpha t} \sin \beta t, t e^{\alpha t} \cos \beta t, t e^{\alpha t} \sin \beta t, \ldots, t^{k-1} e^{\alpha t} \cos \beta t, t^{k-1} e^{\alpha t} \sin \beta t$
 
-4. Общее решение: $y_{\infty}(t) = C_1 y_1(t) + \ldots + C_n y_n(t)$
+4. Общее решение: $y_{\mathrm{оо}}(t) = C_1 y_1(t) + \ldots + C_n y_n(t)$
 
 Алгоритм 2: Решение неоднородного уравнения (ЛНДУ) — метод неопределённых коэффициентов
 
@@ -2867,19 +2865,19 @@ $$
 
 3. Искать частное решение:
 $$
-y_{\infty}(t) = t^r e^{\alpha t} [\tilde{P}_k(t) \cos \beta t + \tilde{Q}_k(t) \sin \beta t]
+y_{\mathrm{чн}}(t) = t^r e^{\alpha t} [\tilde{P}_k(t) \cos \beta t + \tilde{Q}_k(t) \sin \beta t]
 $$
 где $k = \max(m, l), \tilde{P}_k, \tilde{Q}_k$ — многочлены степени $k$ с неопределёнными коэффициентами
 
 4. Подставить в уравнение → приравнять коэффициенты → найти коэффициенты
 
-5. Общее решение: $y_{\infty}(t) = y_{\infty}(t) + y_{\infty}(t)$
+5. Общее решение: $y_{\mathrm{ор}}(t) = y_{\mathrm{оо}}(t) + y_{\mathrm{чн}}(t)$
 
 Алгоритм 3: Метод вариации постоянных (универсальный)
 
 1. Найти ФСР $y_1, \ldots, y_n$ однородного уравнения
 
-2. Искать решение в виде: $y_{\infty}(t) = C_1(t) y_1(t) + \ldots + C_n(t) y_n(t)$
+2. Искать решение в виде: $y_{\mathrm{чн}}(t) = C_1(t) y_1(t) + \ldots + C_n(t) y_n(t)$
 
 3. Решить систему для $C_i'(t)$:
 $$
@@ -2929,9 +2927,9 @@ $$
 \end{array}
 $$
 ...
-- Решение: $\mathbf{x}(t) = e^{\lambda t} [\mathbf{h}_0 + t \mathbf{h}_1 + \dots + \frac{e^{\alpha - 1}}{(m - 1)!} \mathbf{h}_{m - 1}]$
+- Решение: $\mathbf{x}(t) = e^{\lambda t} [\mathbf{h}_0 + t \mathbf{h}_1 + \dots + \frac{t^{m - 1}}{(m - 1)!} \mathbf{h}_{m - 1}]$
 
-3. Общее решение: $\mathbf{x}_{\infty}(t) = \Phi(t) \mathbf{C}$, где $\Phi(t)$ — фундаментальная матрица
+3. Общее решение: $\mathbf{x}_{\mathrm{оо}}(t) = \Phi(t) \mathbf{C}$, где $\Phi(t)$ — фундаментальная матрица
 
 ### Алгоритм 5: Решение неоднородной системы — метод вариации постоянных
 
